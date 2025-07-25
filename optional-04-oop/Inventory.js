@@ -7,7 +7,26 @@
  * - Memiliki method `listItems` untuk mengembalikan string yang merupakan informasi detail barang (dipanggil dari fungs `item.displayDetails()`).
  */
 
-class Inventory {}
+class Inventory {
+    constructor() {
+        this.items = [];
+    }
+
+    addItem(x) {
+        return this.items.push(x);
+    }
+
+    removeItem(x) {
+        return this.items.splice(x-1,1);
+    }
+
+    listItems() {
+        // Masih bermasalah
+        return this.items.forEach(item => {
+            item.displayDetails();
+        });
+    }
+}
 
 
 // Jangan hapus kode di bawah ini!
