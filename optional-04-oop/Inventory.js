@@ -22,8 +22,8 @@ class Inventory {
 
     listItems() {
         // Masih bermasalah
-        return this.items.forEach(item => {
-            item.displayDetails();
+        this.items.forEach(item => {
+            console.log(item.displayDetails());
         });
     }
 }
