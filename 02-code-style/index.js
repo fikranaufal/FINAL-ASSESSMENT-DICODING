@@ -9,7 +9,7 @@ function getBookById(id) {
 
     if (!book) {
       return null;
-    }
+    };
 
     return book.id;
 };
