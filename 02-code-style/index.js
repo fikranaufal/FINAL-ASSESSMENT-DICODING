@@ -1,17 +1,17 @@
-const books = { };
+const books = {};
 
 function getBooks() {
-    return books;
+  return books;
 };
 
 function getBookById(id) {
   const book = books[id];
 
-    if (!book) {
-      return null;
-    };
+  if (!book) {
+    return null;
+  };
 
-    return book.id;
+  return book.id;
 };
 
 function saveBook(book) {
